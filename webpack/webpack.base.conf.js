@@ -12,7 +12,7 @@ const resolvePath = (dir) => {
 }
 
 const baseConfig = {
-  entry: resolvePath('../src/index.tsx'), // 入口文件
+  entry: resolvePath('../src/index.jsx'), // 入口文件
   output: {
     path: resolvePath('../dist'), // 出口文件
     filename: '[name].bundle.js', // 出口文件名
@@ -46,12 +46,6 @@ const baseConfig = {
         // 支持所有图片
         test: /\.(png|jpg|gif|svg|jpeg)$/,
         type: 'asset/resource',
-      },
-      {
-        // 将所有的tsx文件使用babel编译
-        test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
       },
     ]
   },
