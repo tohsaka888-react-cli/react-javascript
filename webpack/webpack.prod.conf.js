@@ -9,9 +9,7 @@ module.exports = merge(baseConfig, {
     minimizer: [
       new CssMinimizerWebpackPlugin(), '...'
     ],
-    optimization: {
-      nodeEnv: 'production',
-      usedExports: true,
-    },
+    nodeEnv: 'production',
+    usedExports: true,
   }
 })
