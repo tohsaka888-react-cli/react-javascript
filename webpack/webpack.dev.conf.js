@@ -23,6 +23,7 @@ module.exports = merge(baseConfig, {
       logging: 'info'
     },
     host: 'local-ip',
+    historyApiFallback: true, // support React Router Dom
   },
   stats: {
     colors: true,
